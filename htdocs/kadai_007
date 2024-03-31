@@ -4,8 +4,7 @@
    <body>
      <p>
        <?php
-         $commodity_detail ={'name'='onion'},
-{'price'= '200'},{'weight'='160'};
+         $commodity_detail =['name' => 'onion', 'price' => '200', 'weight' => '160'];
 print_r($commodity_detail);
        ?>
      </p>
