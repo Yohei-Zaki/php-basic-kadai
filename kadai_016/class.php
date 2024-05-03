@@ -23,16 +23,18 @@
       private $height;
       private $weight;
 
-      public function __construct(string $name, int $height, int $price){
+      public function __construct(string $name, int $height, int $weight){
         $this->name = $name;
         $this->height =$height;
         $this->weight =$weight;
       }
      }
 $food = new Food('potato', 250);
-$animan= new Animal('dog', 60, 5000);
+$animal= new Animal('dog', 60, 5000);
 
-print_r($food . '<br>'. $animal);
+print_r($food);
+print_r('<br>');
+print_r($animal);
     ?>
 
   </p>
