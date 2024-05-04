@@ -16,8 +16,17 @@
         $this->name = $name;
         $this->price= $price;
       }
-     }
 
+      public function show_price(){
+        echo $this->price . '<br>';
+      }
+     }
+     $food = new Food('potato', 250);
+     print_r($food);
+     print_r('<br>');
+     ?>
+
+     <?php
      class Animal{
       private $name;
       private $height;
@@ -28,15 +37,20 @@
         $this->height =$height;
         $this->weight =$weight;
       }
+      public function show_height(){
+        echo $this->height . '<br>';
+      }
      }
-$food = new Food('potato', 250);
-$animal= new Animal('dog', 60, 5000);
+     $animal= new Animal('dog', 60, 5000);
+     print_r($animal);
+     print_r('<br>');
 
-print_r($food);
-print_r('<br>');
-print_r($animal);
-    ?>
+     ?>
 
+  <?php
+    $food->show_price();
+    $animal->show_height();
+  ?>
   </p>
 
 </body>
